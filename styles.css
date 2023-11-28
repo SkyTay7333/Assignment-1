@@ -21,7 +21,7 @@ h1 {
 /* Navigation styles */
 nav {
     background-color: #333;
-    padding: 10px 0;
+    padding: 4% 0;
     overflow: hidden;
     text-align: center; /* Center the text within the nav */
     transition: background-color 0.5s;
@@ -46,25 +46,23 @@ ul {
 .left-item{
     position: absolute;
     left: 0;
-    justify-content: center;
 }
 
 .middle-item{
     position: absolute;
-    justify-content: center;
+    left: 46%;
 }
 
 .right-item{
     position: absolute;
     display: inline;
-    justify-content: center;
-    right: 0;
+    right: 10px;
 }
 
 a {
     display: block;
     color: white;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
 }
 
