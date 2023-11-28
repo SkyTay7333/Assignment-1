@@ -1,0 +1,85 @@
+{
+    "UpcomingConcerts": [
+      {
+        "id": 1,
+        "title": "Soulful Serenade",
+        "location": "City Hall Amphitheater",
+        "date": "2023-06-15",
+        "time": "7:00 PM",
+        "description": "Join Jiubel for an evening of soulful melodies and captivating performances. It's a concert you won't want to miss!",
+        "ticketPrice": 30.00,
+        "ticketsAvailable": 500
+      },
+      {
+        "id": 2,
+        "title": "Moonlight Melodies",
+        "location": "Riverside Arena",
+        "date": "2023-07-20",
+        "time": "8:00 PM",
+        "description": "Experience Jiubel's enchanting tunes under the moonlight. A magical night filled with music and memories.",
+        "ticketPrice": 40.00,
+        "ticketsAvailable": 300
+      },
+      {
+        "id": 3,
+        "title": "Harmony in the Park",
+        "location": "Central Park Pavilion",
+        "date": "2023-08-25",
+        "time": "6:30 PM",
+        "description": "Jiubel takes the stage in Central Park for an intimate concert surrounded by nature. Join us for an evening of harmony!",
+        "ticketPrice": 35.00,
+        "ticketsAvailable": 200
+      },
+      {
+        "id": 4,
+        "title": "Electrifying Beats",
+        "location": "Downtown Stadium",
+        "date": "2023-09-10",
+        "time": "9:00 PM",
+        "description": "Get ready for a night of electrifying beats and high-energy performances. Dance the night away with Jiubel!",
+        "ticketPrice": 45.00,
+        "ticketsAvailable": 400
+      },
+      {
+        "id": 5,
+        "title": "Jazz Fusion Fiesta",
+        "location": "Jazz Club Lounge",
+        "date": "2023-10-05",
+        "time": "7:30 PM",
+        "description": "Immerse yourself in a fusion of jazz styles with Jiubel's special performance at the Jazz Club Lounge. A night of musical fusion awaits!",
+        "ticketPrice": 38.00,
+        "ticketsAvailable": 250
+      },
+      {
+        "id": 6,
+        "title": "Rock Revolution",
+        "location": "Rock Arena",
+        "date": "2023-11-15",
+        "time": "8:30 PM",
+        "description": "Experience the revolution of rock music with Jiubel at the Rock Arena. Unleash your inner rocker and join the revolution!",
+        "ticketPrice": 50.00,
+        "ticketsAvailable": 350
+      },
+      {
+        "id": 7,
+        "title": "Mystical Acoustics",
+        "location": "Enchanted Hall",
+        "date": "2024-01-08",
+        "time": "6:00 PM",
+        "description": "Embark on a journey of mystical acoustics with Jiubel in the enchanted hall. An evening of magical tunes awaits!",
+        "ticketPrice": 32.00,
+        "ticketsAvailable": 280
+      },
+      {
+        "id": 8,
+        "title": "Cinematic Symphony",
+        "location": "Film City Auditorium",
+        "date": "2024-02-20",
+        "time": "7:30 PM",
+        "description": "Immerse yourself in a cinematic symphony as Jiubel performs iconic movie soundtracks. A night of musical storytelling!",
+        "ticketPrice": 42.00,
+        "ticketsAvailable": 320
+      }
+    ]
+  }
+  

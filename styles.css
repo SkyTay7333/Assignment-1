@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
     transition: background-color 0.5s;
     margin: 0;
@@ -15,23 +15,35 @@ body {
 }
 
 h1 {
-    color: #0066cc;
+    color: #e600ff;
+}
+
+h2 {
+    color: #ed9bf7;
 }
 
 /* Navigation styles */
 nav {
     background-color: #333;
-    padding: 4% 0;
+    padding: 2% 0;
     overflow: hidden;
     text-align: center; /* Center the text within the nav */
     transition: background-color 0.5s;
 }
 
+.nav-group {
+    margin: 0;
+    padding: 0;
+}
+
 .brand {
-    color: white;
+    color: rgb(255, 0, 255);
     font-size: 24px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     display: inline;
+    font-size: xx-large;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-top: -10px;
 }
 
 ul {
@@ -43,60 +55,37 @@ ul {
     justify-content: space-between;
 }
 
-.left-item{
+.left-item {
     position: absolute;
     left: 0;
+    font-size: x-large;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
-.middle-item{
+.middle-item {
     position: absolute;
     left: 46%;
+    height: 0px;
 }
 
-.right-item{
+.right-item {
     position: absolute;
-    display: inline;
     right: 10px;
 }
 
-a {
-    display: block;
-    color: white;
-    padding: 0px 16px;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: #555;
-}
-
-.dark-mode {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Social links styles */
+/* Adjust the positioning of social links within social-links */
 .social-links {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
-}
-
-.social-links li {
-    margin: 0 10px;
+    align-items: center;
+    justify-content: flex-end; /* Align to the right */
+    margin-right: 20px; /* Add margin to the right side of social links */
 }
 
 .social-links a {
     display: block;
     color: #0066cc;
     text-decoration: none;
+    margin: 0 10px; /* Add margin to separate social links */
 }
 
 .social-links a:hover {
@@ -104,7 +93,34 @@ a:hover {
 }
 
 .social-links ion-icon {
-    color: black;
+    color: #0066cc; /* Update the color of social icons */
+}
+
+/* Adjust the positioning of social links within right-item */
+.right-item .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-item .social-links a {
+    margin: 0 10px;
+}
+
+a {
+    display: block;
+    color: rgb(235, 145, 255);
+    padding: 0px 25px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(153, 0, 255);
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
 }
 
 /* Toggle dark mode button styles */
@@ -120,4 +136,83 @@ a:hover {
 #darkModeToggle:hover {
     background-color: #000;
     color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Search Form styles */
+.search-form {
+    background-color: rgb(118, 217, 247);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+.search-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.search-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(255, 0, 212);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.concert-details {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style the concert title */
+.concert-details h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Style other details */
+.concert-details p {
+    margin: 5px 0;
+}
+
+/* Style the "Buy Tickets" button */
+.concert-details button {
+    background-color: #ff69b4; /* Pink color */
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Hover effect for the button */
+.concert-details button:hover {
+    background-color: #d1478e; /* Lighter pink color */
 }

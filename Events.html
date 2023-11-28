@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Selected+Font&display=swap">
+    <title>Jiubel - Home</title>
+   
+</head>
+<body>
+    <nav>
+        <div class="nav-group">
+            <ul class="left-item">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="Events.html">Events</a></li>
+            </ul>
+        </div>
+    
+        <div class="nav-group">
+            <ul class="middle-item">
+                <li><div class="brand">JIUBEL</div></li>
+            </ul>
+        </div>
+    
+        <div class="nav-group">
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/jiubel/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://twitter.com/jiubel_?lang=en" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.tiktok.com/@Jiubel" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+            </ul>
+        </div>
+
+        <div class="nav-group">
+            <ul class="right-item">
+                <li><a href="#" id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</a></li>
+                <!-- Add other menu items as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Search Form Section -->
+        <section class="search-form">
+            <h2>Find Your Concert</h2>
+            <form id="filterForm">
+                <label for="keywordInput">Keyword:</label>
+                <input type="text" id="keywordInput" placeholder="Enter keyword">
+            
+                <label for="locationInput">Location:</label>
+                <input type="text" id="locationInput" placeholder="Enter location">
+            
+                <button type="submit">Filter</button>
+            </form>
+        </section>
+        <br><br>
+        <h2>Concert Listings</h2>
+
+        <!-- Concert Details Section -->
+        <div class="concert-details" id="concertDetails">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
