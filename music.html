@@ -1,38 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Jiubel - Music</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Montagu+Slab:opsz,wght@16..144,600&display=swap" rel="stylesheet">
+    <title>Jiubel's Music Showcase</title>
+    <script src="script.js"></script>
 </head>
+
 <body>
     <nav>
-        <div class="brand">JIUBEL</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-        <div class="language-selector">
-            <select id="languageSelect" onchange="changeLanguage()">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <!-- Add more language options as needed -->
-            </select>
+        <div class="nav-group">
+            <ul class="left-item">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="Events.html">Events</a></li>
+            </ul>
+        </div>
+    
+        <div class="nav-group">
+            <ul class="middle-item">
+                <li><div class="brand">JIUBEL</div></li>
+            </ul>
+        </div>
+    
+        <div class="nav-group">
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/jiubel/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://twitter.com/jiubel_?lang=en" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.tiktok.com/@Jiubel" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+            </ul>
+        </div>
+
+        <div class="nav-group">
+            <ul class="right-item">
+                <li><a href="#" id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</a></li>
+                <!-- Add other menu items as needed -->
+            </ul>
         </div>
     </nav>
+
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <header class="music-head1">
+        <h1><center><u>Jiubel's Music Showcase</u></center></h1>
+    </header>
+
+    <br>
+
+    <h2><center>Streaming Platforms</center></h2>
+    <section id="streaming-platforms">
+        <ul>
+            <li><img src="spotify-logo.png" alt="Spotify"> Spotify</li>
+            <li><img src="apple-music-logo.png" alt="Apple Music"> Apple Music</li>
+            <li><img src="youtube-logo.png" alt="YouTube"> YouTube</li>
+            <!-- Add more streaming platforms as needed -->
+        </ul>
+    </section>
+
+    <br><br>
+
+    <h2><center>Top Songs</center></h2>
+    <section id="top-songs">
+        <ul class="song-list">
+            <li>
+                <div class="song-info">
+                    <h3>Runnin</h3>
+                    <!-- Album Image -->
+                    <img src="images/done/runnin vinyl done.png" alt="Song 1">
+                    <!-- Buttons -->
+                    <div class="music-buttons">
+                        <!-- Spotify button -->
+                        <a href="https://open.spotify.com/track/4LNy8pgXJZwBvMe7CeJUC6?si=aa7def8c87af4a36" target="_blank" class="spotify-button">
+                            Listen on Spotify
+                        </a>
+                        <!-- Apple Music button -->
+                        <a href="https://music.apple.com/us/album/runnin/1592686006?i=1592686013" target="_blank" class="apple-music-button">
+                            Listen on Apple Music
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!-- Repeat the structure for other songs -->
+            <li>
+                <div class="song-info">
+                    <h3>Notice Me</h3>
+                    <!-- Album Image -->
+                    <img src="images/done/notice me vinyl done.png" alt="Song 2">
+                    <!-- Buttons -->
+                    <div class="music-buttons">
+                    <!-- Spotify button -->
+                        <a href="https://open.spotify.com/track/0D6e8vxL7nufsDROdWStM0?si=0f5bddec1c27478f" target="_blank" class="spotify-button">
+                            Listen on Spotify
+                        </a>
+                        <!-- Apple Music button -->
+                        <a href="https://music.apple.com/us/album/notice-me/1633553643?i=1633553964" target="_blank" class="apple-music-button">
+                            Listen on Apple Music
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="song-info">
+                    <h3>Orange Trees</h3>
+                    <!-- Album Image -->
+                    <img src="images/done/orange trees vinyl done.png" alt="Song 3">
+                    <!-- Buttons -->
+                    <div class="music-buttons">
+                        <!-- Spotify button -->
+                        <a href="https://open.spotify.com/track/3eVoB50kvcFMkQ5Gs4naQc?si=1bc70ffb2a4d46c3" target="_blank" class="spotify-button">
+                            Listen on Spotify
+                        </a>
+                        <!-- Apple Music button -->
+                        <a href="https://music.apple.com/us/album/orange-trees/1648814457?i=1648814458" target="_blank" class="apple-music-button">
+                            Listen on Apple Music
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="song-info">
+                    <h3>Scooby Doo</h3>
+                    <!-- Album Image -->
+                    <img src="images/done/scooby doo vinyl done.png" alt="Song 4">
+                    <!-- Buttons -->
+                    <div class="music-buttons">
+                        <!-- Spotify button -->
+                        <a href="https://open.spotify.com/track/1tCniaSfd4ayt8A04maOX5?si=587697ad698a48b3" target="_blank" class="spotify-button">
+                            Listen on Spotify
+                        </a>
+                        <!-- Apple Music button -->
+                        <a href="https://music.apple.com/us/album/scooby-doo/1640376005?i=1640376006" target="_blank" class="apple-music-button">
+                            Listen on Apple Music
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="song-info">
+                    <h3>Maria</h3>
+                    <!-- Album Image -->
+                    <img src="images/done/maria vinyl done.png" alt="Song 5">
+                    <!-- Buttons -->
+                    <div class="music-buttons">
+                        <!-- Spotify button -->
+                        <a href="https://open.spotify.com/track/26eRpNL5Yfc7YGa33qA0sP?si=00460f9b1cce45ec" target="_blank" class="spotify-button">
+                            Listen on Spotify
+                        </a>
+                        <!-- Apple Music button -->
+                        <a href="https://music.apple.com/us/album/maria/1710502708?i=1710502709" target="_blank" class="apple-music-button">
+                            Listen on Apple Music
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!-- Repeat for other songs -->
+        </ul>
+    </section>
     
 
-    <div class="container">
-        <h1>Explore Jiubel's Music</h1>
-        <!-- Add a list of Jiubel's songs or albums, include images or audio samples -->
-    </div>
-    <div>
-        <p>Check out Jiubel's latest single, "Maria"!</p>
-        <button>Listen Now</button>
-    </div>
+    <section id="top-albums">
+        <h2>Top Albums</h2>
+        <ul>
+            <li>Album 1</li>
+            <li>Album 2</li>
+            <li>Album 3</li>
+            <!-- Add more top albums as needed -->
+        </ul>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Add more sections for additional content, such as upcoming events, etc. -->
+
+    <footer>
+        <p>&copy; 2023 Jiubel Music. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
