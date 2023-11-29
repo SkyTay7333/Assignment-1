@@ -7,6 +7,23 @@ body {
     padding: 0;
 }
 
+.portraits {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: #4b0082; 
+    text-align: center;
+    color: #fff;
+}
+
+.portraits img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 video {
     position: fixed;
     top: 50%;
@@ -44,6 +61,10 @@ nav {
     overflow: hidden;
     text-align: center; /* Center the text within the nav */
     transition: background-color 0.5s;
+    position: fixed; /* Fixed position to stay at the top */
+    width: 100%; /* Take up the full width of the viewport */
+    top: 0; /* Align to the top of the viewport */
+    z-index: 1000; /* Ensure it appears above other content */
 }
 
 .nav-group {
@@ -80,7 +101,7 @@ ul {
 .middle-item {
     position: absolute;
     left: 46%;
-    height: 0px;
+    height: 50px;
 }
 
 .right-item {
@@ -98,9 +119,9 @@ ul {
 
 .social-links a {
     display: block;
-    color: #0066cc;
+    color: #f200ff;
     text-decoration: none;
-    margin: 0 10px; /* Add margin to separate social links */
+    margin: 20px 10px; /* Add margin to separate social links */
 }
 
 .social-links a:hover {
@@ -108,7 +129,7 @@ ul {
 }
 
 .social-links ion-icon {
-    color: #0066cc; /* Update the color of social icons */
+    color: #fb00ff; /* Update the color of social icons */
 }
 
 /* Adjust the positioning of social links within right-item */
@@ -161,7 +182,7 @@ a:hover {
 
 /* Search Form styles */
 .search-form {
-    background-color: rgb(118, 217, 247);
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -183,11 +204,11 @@ a:hover {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #e600ff;
 }
 
 .search-form input,
-.search-form select,
-.search-form button {
+.search-form select{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -196,23 +217,42 @@ a:hover {
     box-sizing: border-box;
 }
 
+.search-form button {
+    background-color: #e600ff;
+    width: 20%;
+    padding: 10px;
+    margin: 0 auto 15px; 
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: 'Arimo', sans-serif;
+}
+
+.container h2{
+    font-size: xx-large;
+    color: #e600ff;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
 .concert-details {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(255, 0, 212);
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #000000;
 }
 
 /* Style the concert title */
 .concert-details h3 {
-    color: #333;
+    color: rgb(255, 0, 132);
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 /* Style other details */
 .concert-details p {
+    color: #fff;
     margin: 5px 0;
 }
 
@@ -230,4 +270,61 @@ a:hover {
 /* Hover effect for the button */
 .concert-details button:hover {
     background-color: #d1478e; /* Lighter pink color */
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.purchase-form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(0, 0, 0);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #e600ff;
+    box-shadow: 0 0 5px rgba(230, 0, 255, 0.5);
+}
+
+button {
+    background-color: #e600ff;
+    color: #fff;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc00e6;
+}
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 600px) {
+    .purchase-form {
+        max-width: 100%;
+    }
 }

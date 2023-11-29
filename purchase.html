@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Purchase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Montagu+Slab:opsz,wght@16..144,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="events.html">
+        <button>Back to Events</button>
+    </a>
+
+    <h1>Ticket Purchase</h1>
+    <section class="purhase-form">
+        <form id="purchaseForm" action="process_purchase.php" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+    
+            <label for="creditCard">Credit Card Number:</label>
+            <input type="text" id="creditCard" name="creditCard" pattern="[0-9]{16}" required>
+            <br>
+    
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+            <br>
+    
+            <!-- Add more fields for CVV, billing address, etc., as needed -->
+    
+            <input type="hidden" id="concertId" name="concertId" value="">
+            <!-- Hidden input field to store the concertId, to be set via JavaScript -->
+    
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </section>
+
+</body>
+</html>
