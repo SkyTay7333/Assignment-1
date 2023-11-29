@@ -85,12 +85,11 @@ nav {
 
 .brand {
     color: rgb(255, 0, 255);
-    font-size: 24px;
+    font-size: 2.5em; /* Adjust the font size as needed */
     padding: 5px 10px;
-    display: inline;
-    font-size: xx-large;
+    display: inline-block; /* Change 'inline' to 'inline-block' */
     font-family: 'Gloria Hallelujah', cursive;
-    margin-top: -10px;
+    margin-top: 1px;
 }
 
 ul {
@@ -367,41 +366,67 @@ button:hover {
 }
 
 .music-head1 h1{
-    font-size: xx-large;
+    font-size: 3em;
+}
+
+.music-h2{
+    font-size: x-large;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 #streaming-platforms {
     max-width: 1300px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #2d004d;
-    border: 1px solid #ff00bb;
-    border-radius: 8px;
+    padding: 50px 20px;
+    background-color: #1d0031;
+    border: 1px solid #ff00bb; 
+    border-radius: 8px; 
+    text-align: center;
 }
 
-#streaming-platforms ul {
-    list-style: none;
-    padding: 0;
+#streaming-platforms h2 {
+    color: #fff; /* White text color */
+    font-size: 2em; /* Increase font size */
+    margin-bottom: 20px;
 }
 
-#streaming-platforms li {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
+.platforms-container {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#streaming-platforms li img {
-    margin-right: 10px;
-    max-height: 30px; /* Adjust as needed */
+.platform {
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent; /* Set the background to transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out;
 }
+
+
+.platform:hover {
+    transform: scale(1.05); /* Enlarge the platform on hover */
+}
+
+.platform img {
+    max-width: 150px; /* Adjust the max-width for larger images */
+    height: auto;
+}
+
+.platform p {
+    color: #fff; /* White text color */
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 
 #top-songs {
     max-width: 1300px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 50px 20px;
     background-color: #1d0031;
     border: 1px solid #ff00bb;
     border-radius: 8px;
@@ -459,6 +484,72 @@ button:hover {
     margin-bottom: 5px; /* Adjust space between h3 and image */
     color: #fff; /* Text color */
     font-size: 1.2em; /* Adjust font size as needed */
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#top-albums {
+    max-width: 720px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #23003c;
+    border: 1px solid #ff0095;
+    border-radius: 8px;
+}
+
+.album-list {
+    list-style: none;
+    padding: 0;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin to create space between albums */
+}
+
+.music-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.spotify-button,
+.apple-music-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.spotify-button {
+    background-color: rgb(0, 166, 0);
+    width: 125px;
+    margin: auto;
+}
+
+.apple-music-button {
+    background-color: #ff2d55;
+    width: 165px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.album-info img {
+    width: 100%; /* Make the image fill its container */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Reduce the margin-bottom to decrease spacing */
+}
+
+
+.album-info h3 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
     font-family: 'Gloria Hallelujah', cursive;
 }
 
