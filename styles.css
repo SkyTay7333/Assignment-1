@@ -7,21 +7,32 @@ body {
     padding: 0;
 }
 
+h1{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
 .portraits {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    border: 2px solid #fff;
+    border: 1px solid rgb(255, 0, 179);
     border-radius: 8px;
-    background-color: #4b0082; 
+    background-color: #1c0030; 
     text-align: center;
     color: #fff;
 }
 
 .portraits img {
-    max-width: 100%;
-    height: auto;
+    width: 240px; /* Adjust the width to your preference */
+    height: 250px; /* Adjust the height to your preference */
     margin-bottom: 10px;
+    border-radius: 8px; /* Adjust the radius to curve the corners */
+    border: 1px solid #ff69b4; /* Bright pink border */
+}
+
+.portraits p{
+    font-size: large;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 video {
@@ -161,10 +172,10 @@ a:hover {
 
 /* Toggle dark mode button styles */
 #darkModeToggle {
-    background-color: #fff;
-    color: #000;
+    background-color: rgb(81, 0, 104);
+    color: rgb(255, 107, 215);
     padding: 8px 12px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -174,10 +185,34 @@ a:hover {
     color: #fff;
 }
 
+.Link-events {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Bright pink background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 1s ease; /* Add a smooth transition effect */
+}
+
+.Link-events:hover {
+    background-color: #d1478e; /* Lighter pink color on hover */
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.container h2 {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #000; /* Black background color */
+    color: #ff69b4; /* Bright pink text color */
+    padding: 10px; /* Adjust the padding as needed */
+    border: 1px solid #ff69b4; /* Bright pink 1px outline */
+    border-radius: 5px; /* Add rounded corners */
 }
 
 /* Search Form styles */
@@ -186,6 +221,7 @@ a:hover {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
+    border: 1px solid rgb(255, 0, 212);
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
 }
 
