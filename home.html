@@ -15,54 +15,77 @@
        }
    </style>
 </head>
+<br><br>
+<br><br>
+<br><br>
 <body>
+    <header>
+        <h1><center>Welcome to the Home Page</center></h1>
+        <p id="welcomeMessage"></p>
+    </header>
 
-    <nav>
-        <div class="nav-group">
-            <ul class="left-item">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="Events.html">Events</a></li>
-            </ul>
-        </div>
-    
-        <div class="nav-group">
-            <ul class="middle-item">
-                <li><div class="brand">JIUBEL</div></li>
-            </ul>
-        </div>
-    
-        <div class="nav-group">
-            <ul class="social-links">
-                <li><a href="https://www.instagram.com/jiubel/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="https://twitter.com/jiubel_?lang=en" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href="https://www.tiktok.com/@Jiubel" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="big-image1">
-        <img src="images/JIUBEL_BACKGROUND.webp" alt="jiubel background">
-        <h1><u>JIUBEL</u></h1>
-    </div>
-
-    <section class="edge-images">
-        <div class="edge-1">
-            <img src="images/jiubelEdge1.png" alt="Edge1">
-        </div>
-    
-        <div class="edge-2">
-            <img src="images/JiubelEdge2.png" alt="Edge2">
-        </div>
+    <main>
+        <nav>
+            <div class="nav-group">
+                <ul class="left-item">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                </ul>
+            </div>
         
-        <div class="edge-3">
-            <img src="images/JiubelEdge3.png" alt="Edge3">
-            <h1>OUR MODERN DAY RISING STAR</h1>
+            <div class="nav-group">
+                <ul class="middle-item">
+                    <li><div class="brand">JIUBEL</div></li>
+                </ul>
+            </div>
+        
+            <div class="nav-group">
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/jiubel/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/jiubel_?lang=en" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.tiktok.com/@Jiubel" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                    <li><a href="Modern Login Form/dist/"></a></li>
+                </ul>
+            </div>
+
+            <div class="nav-group">
+                <ul class="right-item">
+                    <li><a href="#" id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</a></li>
+                    <!-- Add other menu items as needed -->
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="big-image1">
+            <img src="images/JIUBEL_BACKGROUND.webp" alt="jiubel background">
+            <h1><u>JIUBEL</u></h1>
         </div>
-    </section>
+    
+        <section class="edge-images">
+            <div class="edge-1">
+                <img src="images/jiubelEdge1.png" alt="Edge1">
+            </div>
+        
+            <div class="edge-2">
+                <img src="images/JiubelEdge2.png" alt="Edge2">
+            </div>
+            
+            <div class="edge-3">
+                <img src="images/JiubelEdge3.png" alt="Edge3">
+                <h1>OUR MODERN DAY RISING STAR</h1>
+            </div>
+        </section>
+    </main>
+    
     <br><br>
     
+    <footer>
+        <button id="logoutBtn">Logout</button>
+    </footer>
+
+    <script src="script.js"></script>
 
     
 </body>
