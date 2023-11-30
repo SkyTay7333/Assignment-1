@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Check if the provided credentials are valid
             if (isValidLogin(username, password)) {
                 // Redirect to the home page after successful login
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             } else {
                 // Display error messages for invalid credentials
                 displayErrorMessage("Invalid username or password. Please try again.");

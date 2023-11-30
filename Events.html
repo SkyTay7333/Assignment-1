@@ -11,14 +11,27 @@
    
 </head>
 <body>
+    <div id="slidingNav">
+        <div class="nav-content">
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <video autoplay muted loop>
         <source src="images/stage.mp4" type="video/mp4">
     </video>
     <nav>
         <div class="nav-group">
             <ul class="left-item">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="Events.html">Events</a></li>
             </ul>
@@ -69,6 +82,13 @@
         <div class="concert-details" id="concertDetails">
         </div>
     </div>
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const slidingNav = document.querySelector('.nav-links');
+            slidingNav.classList.toggle('show');
+        });
+    </script>
+      
     <script src="concertscript.js"></script>
 </body>
 </html>

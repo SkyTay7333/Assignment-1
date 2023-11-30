@@ -10,14 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Montagu+Slab:opsz,wght@16..144,600&display=swap" rel="stylesheet">
     <title>Jiubel's Music Showcase</title>
     <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <body>
+    <div id="slidingNav">
+        <div class="nav-content">
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <nav>
         <div class="nav-group">
             <ul class="left-item">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="Events.html">Events</a></li>
             </ul>
@@ -247,6 +261,13 @@
     <footer>
         <p>&copy; 2023 Jiubel Music. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const slidingNav = document.querySelector('.nav-links');
+            slidingNav.classList.toggle('show');
+        });
+    </script>
+      
 
 </body>
 
