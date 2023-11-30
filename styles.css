@@ -11,6 +11,48 @@ h1{
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+.big-image1 img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.big-image1 h1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6em;
+}
+
+.edge-images {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.edge-images > div {
+    flex: 1; 
+}
+
+.edge-images img {
+    position: relative;
+    width: 100%; 
+    height: 430px;
+    display: block; 
+    object-fit: cover; 
+}
+
+.edge-images h1{
+    color: #ffffff;
+    position: relative;
+    bottom: 50%;
+    right: 100%;
+    font-size: 1.8em;
+}
+
 .portraits {
     max-width: 900px;
     margin: 0 auto;
@@ -23,11 +65,11 @@ h1{
 }
 
 .portraits img {
-    width: 240px; /* Adjust the width to your preference */
-    height: 250px; /* Adjust the height to your preference */
+    width: 240px;
+    height: 250px; 
     margin-bottom: 10px;
-    border-radius: 8px; /* Adjust the radius to curve the corners */
-    border: 1px solid #ff69b4; /* Bright pink border */
+    border-radius: 8px; 
+    border: 1px solid #ff69b4; 
 }
 
 .portraits p{
@@ -54,7 +96,7 @@ video {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center; /* Center the content within the container */
+    text-align: center; 
 }
 
 h1 {
@@ -65,17 +107,16 @@ h2 {
     color: #ed9bf7;
 }
 
-/* Navigation styles */
 nav {
     background-color: #333;
     padding: 2% 0;
     overflow: hidden;
-    text-align: center; /* Center the text within the nav */
+    text-align: center; 
     transition: background-color 0.5s;
-    position: fixed; /* Fixed position to stay at the top */
-    width: 100%; /* Take up the full width of the viewport */
-    top: 0; /* Align to the top of the viewport */
-    z-index: 1000; /* Ensure it appears above other content */
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
 }
 
 .nav-group {
@@ -85,9 +126,9 @@ nav {
 
 .brand {
     color: rgb(255, 0, 255);
-    font-size: 2.5em; /* Adjust the font size as needed */
+    font-size: 2.5em;
     padding: 5px 10px;
-    display: inline-block; /* Change 'inline' to 'inline-block' */
+    display: inline-block; 
     font-family: 'Gloria Hallelujah', cursive;
     margin-top: 1px;
 }
@@ -119,19 +160,18 @@ ul {
     right: 10px;
 }
 
-/* Adjust the positioning of social links within social-links */
 .social-links {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align to the right */
-    margin-right: 20px; /* Add margin to the right side of social links */
+    justify-content: flex-end; 
+    margin-right: 20px; 
 }
 
 .social-links a {
     display: block;
     color: #f200ff;
     text-decoration: none;
-    margin: 20px 10px; /* Add margin to separate social links */
+    margin: 20px 10px;
 }
 
 .social-links a:hover {
@@ -139,10 +179,9 @@ ul {
 }
 
 .social-links ion-icon {
-    color: #fb00ff; /* Update the color of social icons */
+    color: #fb00ff; 
 }
 
-/* Adjust the positioning of social links within right-item */
 .right-item .social-links {
     display: flex;
     align-items: center;
@@ -161,7 +200,7 @@ a {
 }
 
 a:hover {
-    background-color: rgb(153, 0, 255);
+    transform: scale(1.2);
 }
 
 .dark-mode {
@@ -169,7 +208,6 @@ a:hover {
     color: #fff;
 }
 
-/* Toggle dark mode button styles */
 #darkModeToggle {
     background-color: rgb(81, 0, 104);
     color: rgb(255, 107, 215);
@@ -187,15 +225,15 @@ a:hover {
 .Link-events {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff69b4; /* Bright pink background color */
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 1s ease; /* Add a smooth transition effect */
+    background-color: #ff69b4; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 1s ease;
 }
 
 .Link-events:hover {
-    background-color: #d1478e; /* Lighter pink color on hover */
+    background-color: #d1478e;
 }
 
 .container {
@@ -210,7 +248,6 @@ a:hover {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-/* Search Form styles */
 .search-form {
     background-color: rgb(0, 0, 0);
     padding: 20px;
@@ -264,11 +301,11 @@ a:hover {
     font-size: xx-large;
     max-width: 300px;
     margin: 0 auto;
-    background-color: #000; /* Black background color */
-    color: #ff69b4; /* Bright pink text color */
-    padding: 10px; /* Adjust the padding as needed */
-    border: 1px solid #ff69b4; /* Bright pink 1px outline */
-    border-radius: 5px; /* Add rounded corners */
+    background-color: #000;
+    color: #ff69b4; 
+    padding: 10px; 
+    border: 1px solid #ff69b4; 
+    border-radius: 5px; 
 }
 
 .concert-details {
@@ -279,22 +316,19 @@ a:hover {
     background-color: #000000;
 }
 
-/* Style the concert title */
 .concert-details h3 {
     color: rgb(255, 0, 132);
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-/* Style other details */
 .concert-details p {
     color: #fff;
     margin: 5px 0;
 }
 
-/* Style the "Buy Tickets" button */
 .concert-details button {
-    background-color: #ff69b4; /* Pink color */
+    background-color: #ff69b4; 
     color: #fff;
     padding: 8px 15px;
     border: none;
@@ -303,9 +337,8 @@ a:hover {
     font-size: 1em;
 }
 
-/* Hover effect for the button */
 .concert-details button:hover {
-    background-color: #d1478e; /* Lighter pink color */
+    background-color: #d1478e; 
 }
 
 .back-button {
@@ -358,7 +391,6 @@ button:hover {
     background-color: #cc00e6;
 }
 
-/* Additional styles for responsiveness */
 @media only screen and (max-width: 600px) {
     .purchase-form {
         max-width: 100%;
@@ -385,8 +417,8 @@ button:hover {
 }
 
 #streaming-platforms h2 {
-    color: #fff; /* White text color */
-    font-size: 2em; /* Increase font size */
+    color: #fff;
+    font-size: 2em; 
     margin-bottom: 20px;
 }
 
@@ -399,24 +431,24 @@ button:hover {
 .platform {
     margin: 10px;
     padding: 10px;
-    background-color: transparent; /* Set the background to transparent */
+    background-color: transparent; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out;
 }
 
 
 .platform:hover {
-    transform: scale(1.05); /* Enlarge the platform on hover */
+    transform: scale(1.05); 
 }
 
 .platform img {
-    max-width: 150px; /* Adjust the max-width for larger images */
+    max-width: 150px; 
     height: auto;
 }
 
 .platform p {
-    color: #fff; /* White text color */
+    color: #fff; 
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.2em;
@@ -473,17 +505,17 @@ button:hover {
 }
 
 .song-info img {
-    width: 125%; /* Set a fixed width */
-    height: 150px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image covers the fixed dimensions */
+    width: 125%;
+    height: 150px; 
+    object-fit: cover; 
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .song-info h3 {
-    margin-bottom: 5px; /* Adjust space between h3 and image */
-    color: #fff; /* Text color */
-    font-size: 1.2em; /* Adjust font size as needed */
+    margin-bottom: 5px; 
+    color: #fff; 
+    font-size: 1.2em; 
     font-family: 'Gloria Hallelujah', cursive;
 }
 
@@ -505,7 +537,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px; /* Add margin to create space between albums */
+    margin-bottom: 10px;
 }
 
 .music-buttons {
@@ -538,11 +570,11 @@ button:hover {
 }
 
 .album-info img {
-    width: 100%; /* Make the image fill its container */
+    width: 100%; 
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 5px; /* Reduce the margin-bottom to decrease spacing */
+    margin-bottom: 5px; 
 }
 
 
@@ -552,4 +584,6 @@ button:hover {
     margin-bottom: 10px;
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+
 
